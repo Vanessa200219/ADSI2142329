@@ -7,6 +7,8 @@
     <title>Repaso logica de Programacion</title>
 </head>
 <body>
-    
+    <?php
+        echo "Inicio de repaso";
+    ?>
 </body>
 </html>
