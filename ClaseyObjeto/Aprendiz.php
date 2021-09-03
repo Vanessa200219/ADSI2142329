@@ -43,7 +43,11 @@ class Aprendiz{
     {
         return $this->ficha;
     }
-}
+
+
+}//Llave de clase
+
+
 
 
 
