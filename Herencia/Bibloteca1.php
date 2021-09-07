@@ -32,10 +32,11 @@ class Bibloteca
     {
         for ($i=0; $i <count($this->coleccion); $i++) { 
 
-            if ($this->coleccion[$i]=="Revista") {
+            if ($this->coleccion[$i]->getter("tipoMaterial")=='Libro') {
                 echo $this->coleccion[$i]->getter("tipoMaterial");
             }else
-                echo $this->coleccion[$i]->getter("tipoMaterial");
+            echo $this->coleccion[$i]->getter("tipoMaterial");
+            
         }
     }
 
@@ -187,8 +188,6 @@ class Material extends Bibloteca {
     
 
     echo '<br><br>';
-    $obj= new Bibloteca ("Libro");
-    $obj->verMaterial("");
     $obj= new Libro("Libro",143385,"Gabriel Garcia marquez","Cien años de Soledad",1967,"Mondadori Debolsillo");
     echo $obj->getter("tipoMaterial").'<br><br>';
     echo "<br> Material: <br><br>";
@@ -213,63 +212,65 @@ class Material extends Bibloteca {
     echo "Editorial: ";
     echo $obj->getter("editorial").'<br><br>';
 
+    
+
 
     //Nuevo Instaciamineto 
     echo '<br><br>';
-    $obj= new Bibloteca ("Libro");
-    $obj= new Libro("Libro",143385,"Fiódor Dostoyevski","Crimen y castigo",1866,"Alma");
-    echo $obj->getter("tipoMaterial").'<br><br>';
+    $obj1= new Bibloteca ("Libro");
+    $obj1= new Libro("Libro",143385,"Fiódor Dostoyevski","Crimen y castigo",1866,"Alma");
+    echo $obj1->getter("tipoMaterial").'<br><br>';
     echo "<br> Material: <br><br>";
-    $obj->AltaMaterial();
+    $obj1->AltaMaterial();
     echo "<br><br>";
-    $obj->BajaMaterial();
+    $obj1->BajaMaterial();
     echo "<br><br>";
-    $obj->CambiarMaterial();
+    $obj1->CambiarMaterial();
     echo "<br><br><br> Caracteristicas: <br><br>";
 
     //uso de getter abreviado
     echo "Tipo de Material: ";
-    echo $obj->getter("tipoMaterial").'<br><br>';
+    echo $obj1->getter("tipoMaterial").'<br><br>';
     echo "Codigo: ";
-    echo $obj->getter("codigo").'<br><br>';
+    echo $obj1->getter("codigo").'<br><br>';
     echo "Autor: ";
-    echo $obj->getter("autor").'<br><br>';
+    echo $obj1->getter("autor").'<br><br>';
     echo "Titulo : ";
-    echo $obj->getter("titulo").'<br><br>';
+    echo $obj1->getter("titulo").'<br><br>';
     echo "Año: ";
-    echo $obj->getter("año").'<br><br>';
+    echo $obj1->getter("año").'<br><br>';
     echo "Editorial: ";
-    echo $obj->getter("editorial").'<br><br>';
+    echo $obj1->getter("editorial").'<br><br>';
 
 
 
     //Nuevo Instaciamineto para Revista
     echo '<br><br>';
-    $obj= new Bibloteca ("Revista");
+    $obj2= new Bibloteca ("Revista");
     //$tipoMaterial,$autor,$titulo,$año,$volumen
-    $obj= new Revista("Revista","123123","Publicaciones Semana","Revista Semana",1999,"0124-5473");
-    echo $obj->getter("tipoMaterial").'<br><br>';
+    $obj2= new Revista("Revista","123123","Publicaciones Semana","Revista Semana",1999,"0124-5473");
+    echo $obj2->getter("tipoMaterial").'<br><br>';
     echo "<br> Material: <br><br>";
-    $obj->AltaMaterial();
+    $obj2->AltaMaterial();
     echo "<br><br>";
-    $obj->BajaMaterial();
+    $obj2->BajaMaterial();
     echo "<br><br>";
-    $obj->CambiarMaterial();
+    $obj2->CambiarMaterial();
     echo "<br><br><br> Caracteristicas: <br><br>";
 
     //uso de getter abreviado
     echo "Tipo de Material: ";
-    echo $obj->getter("tipoMaterial").'<br><br>';
+    echo $obj2->getter("tipoMaterial").'<br><br>';
     echo "Autor: ";
-    echo $obj->getter("autor").'<br><br>';
+    echo $obj2->getter("autor").'<br><br>';
     echo "Codigo: ";
-    echo $obj->getter("codigo").'<br><br>';
+    echo $obj2->getter("codigo").'<br><br>';
     echo "Titulo : ";
-    echo $obj->getter("titulo").'<br><br>';
+    echo $obj2->getter("titulo").'<br><br>';
     echo "Año: ";
-    echo $obj->getter("año").'<br><br>';
+    echo $obj2->getter("año").'<br><br>';
     echo "Volumen: ";
-    echo $obj->getter("volumen").'<br><br>';
+    echo $obj2->getter("volumen").'<br><br>';
 
 
 
@@ -297,6 +298,19 @@ class Material extends Bibloteca {
     echo $obj->getter("año").'<br><br>';
     echo "Editorial: ";
     echo $obj->getter("editorial").'<br><br>';*/
+
+
+    echo "<br><br><br> Tipo de Material <br><br>";
+    $biblio=new Bibloteca();
+    $biblio->Adicionar($obj);
+    
+    $biblio->Adicionar($obj1);
+    
+    $biblio->Adicionar($obj2);
+    
+    echo $biblio->verMaterial();
+    echo "<br><br>";
+
 
    
 
