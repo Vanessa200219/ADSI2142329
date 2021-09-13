@@ -28,11 +28,11 @@ class Bibloteca
     }
 
 
-    function verMaterial()
+    function verMaterialL()
     {
         for ($i=0; $i <count($this->coleccion); $i++) { 
 
-            if ($this->coleccion[$i]->getter("tipoMaterial")=='Libro') {
+            if ($this->coleccion[$i]->getter("tipoMaterial")) {
                 echo $this->coleccion[$i]->getter("tipoMaterial");
             }else
             echo $this->coleccion[$i]->getter("tipoMaterial");
@@ -77,6 +77,7 @@ class Material extends Bibloteca {
         print "Cambiar Material";
     }
 
+    
     
 
     function setTipoMaterial($tipoMaterial){
