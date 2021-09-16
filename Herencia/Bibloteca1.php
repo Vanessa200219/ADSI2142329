@@ -12,6 +12,9 @@
     <section>
     <?php
 
+include('produccion.php');
+use Bibloteca as GlobalBibloteca;
+
 class Bibloteca
 {
     //es yna coleccion de materiales
@@ -28,7 +31,7 @@ class Bibloteca
     }
 
 
-    function verMaterialL()
+    function verMaterial()
     {
         for ($i=0; $i <count($this->coleccion); $i++) { 
 
@@ -43,6 +46,7 @@ class Bibloteca
     
     
 }
+
 
 class Material extends Bibloteca {
 
@@ -125,16 +129,14 @@ class Material extends Bibloteca {
     }
 
 
-    
-
-
-    
-    }   
+}   
 
     
     
     
-    class Libro extends Material{
+
+
+class Libro extends Material implements Produccion{
 
         protected $editorial;
 
@@ -155,13 +157,23 @@ class Material extends Bibloteca {
         }
 
 
+        function publicar(){
+            if ($this->año>2010) {
+                echo 'Libro candidato a ser digitalizado';
+            } else {
+                echo 'Por antiguedad NO digitalizar';
+            }
+            
+        }
 
-        
-    }
+
+        function conservar(){}
+
+}
 
 
 
-    class Revista extends Material{
+class Revista extends Material implements Produccion{
 
         protected $volumen;
 
@@ -181,10 +193,18 @@ class Material extends Bibloteca {
             return $this->$nombreAtributo;
         }
 
-
+        function publicar(){
+            if ($this->volumen>10) {
+                echo 'se digitaliza';
+            } else {
+                echo 'no se digitaliza';
+            }
+            
+        }
+        function conservar(){}
 
         
-    }
+}
     
     
 
@@ -212,6 +232,9 @@ class Material extends Bibloteca {
     echo $obj->getter("año").'<br><br>';
     echo "Editorial: ";
     echo $obj->getter("editorial").'<br><br>';
+    echo "Digitalizacion: <br><br>";
+    echo $obj->publicar();
+    echo "<br><br>------------------------------------------------------------------";
 
     
 
@@ -219,7 +242,7 @@ class Material extends Bibloteca {
     //Nuevo Instaciamineto 
     echo '<br><br>';
     $obj1= new Bibloteca ("Libro");
-    $obj1= new Libro("Libro",143385,"Fiódor Dostoyevski","Crimen y castigo",1866,"Alma");
+    $obj1= new Libro("Libro",143385,"Fiódor Dostoyevski","Crimen y castigo",2015,"Alma");
     echo $obj1->getter("tipoMaterial").'<br><br>';
     echo "<br> Material: <br><br>";
     $obj1->AltaMaterial();
@@ -242,6 +265,10 @@ class Material extends Bibloteca {
     echo $obj1->getter("año").'<br><br>';
     echo "Editorial: ";
     echo $obj1->getter("editorial").'<br><br>';
+    echo "Digitalizacion: <br><br>";
+    echo $obj1->publicar();
+    echo "<br><br>------------------------------------------------------------------";
+    
 
 
 
@@ -249,7 +276,7 @@ class Material extends Bibloteca {
     echo '<br><br>';
     $obj2= new Bibloteca ("Revista");
     //$tipoMaterial,$autor,$titulo,$año,$volumen
-    $obj2= new Revista("Revista","123123","Publicaciones Semana","Revista Semana",1999,"0124-5473");
+    $obj2= new Revista("Revista","123123","Publicaciones Semana","Revista Semana",1999,"24");
     echo $obj2->getter("tipoMaterial").'<br><br>';
     echo "<br> Material: <br><br>";
     $obj2->AltaMaterial();
@@ -272,6 +299,9 @@ class Material extends Bibloteca {
     echo $obj2->getter("año").'<br><br>';
     echo "Volumen: ";
     echo $obj2->getter("volumen").'<br><br>';
+    echo "Digitalizacion: <br><br>";
+    echo $obj2->publicar();
+    echo "<br><br>------------------------------------------------------------------";
 
 
 
@@ -309,7 +339,7 @@ class Material extends Bibloteca {
     
     $biblio->Adicionar($obj2);
     
-    echo $biblio->verMaterial();
+    echo "<br><br>".$biblio->verMaterial()."<br><br>";
     echo "<br><br>";
 
 

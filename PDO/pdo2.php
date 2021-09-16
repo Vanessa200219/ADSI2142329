@@ -1,5 +1,5 @@
 <?php 
-include('pdo1.php');
+/*include('pdo1.php');
 
 
 echo '<br><br><br>------------------------------- Objetos--------------<br><br>';
@@ -9,6 +9,6 @@ while ($key=$statement->fetch(PDO::FETCH_ASSOC)) {
 }
 
 $statement=$conexion->prepare("insert into aprendiz values ('Simon Bolivar','556655','adsi','M')");
-$statement->execute();
+$statement->execute();*/
  
 ?>

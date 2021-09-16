@@ -2,7 +2,7 @@
 
 //PDO = PHP Data Obbject
 
-$dsn='mysql:host=localhost;dbname=adsi21';
+/*$dsn='mysql:host=localhost;dbname=adsi21';
 $username='root';
 $password='';
 $conexion;
@@ -59,5 +59,5 @@ while ($key=$statement->fetch(PDO::FETCH_OBJ)) {
 }
 
 
-
+*/
 ?>
