@@ -12,16 +12,22 @@
 
         <a href="">PRODUCTOS</a>
 
-    <form action="" method="POST">
+                <div class="mensaje">
+                   <?php
+                        include("../Controlador/ProductoRegistro.php");
+                    ?>
+                </div>
+
+    <form action="" method="GET">
 
         <h1><center>REGISTRO PRODUCTO</center></h1><br><br>
 
         <label>CODIGO DEL PRODUCTO</label><br>
-        <input type="text" name="Producto" placeholder="Ingrese Codigo Producto" required>
+        <input type="number" name="Producto" placeholder="Ingrese Codigo Producto" required>
         <br>
 
         <label>CODIGO DE CATEGORIA</label><br>
-        <input type="text" name="Categoria" placeholder="Ingrese Codigo ategoria" required>
+        <input type="number" name="Categoria" placeholder="Ingrese Codigo ategoria" required>
         <br>
 
         <label>NIT PROVEEDOR</label><br>
@@ -44,6 +50,7 @@
 
     </form>
     <br>
+                
     </div>
 </body>
 </html>
