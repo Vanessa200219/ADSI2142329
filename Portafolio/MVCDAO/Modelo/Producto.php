@@ -41,7 +41,7 @@ class Producto{
     }
 
 
-    function set($CodigoCategoria)
+    function setCodigoCategoria($CodigoCategoria)
     {
         $this->CodigoCategoria=$CodigoCategoria;
     }

@@ -42,8 +42,29 @@ class DaoProductoImpl extends Conexion implements daoProducto{
 
     public function Listar()
     {
-        # code...
+        $lista = null;
+        try {
+            $stmt = $this->getCnx()->prepare("SELECT * FROM productos");
+            $lista = array();
+            $stmt->execute();
+
+            foreach ($stmt as $key) {
+                $a = new Producto(null,null,null,null,null,null);
+                $a->setCodigoProducto($key['Codigo_Producto']);
+                $a->setCodigoCategoria($key['Codigo_Categoria']);
+                $a->setNitProveedor($key['Nit_Proveedor']);
+                $a->setNombreProducto($key['Nombre_Producto']);
+                $a->setValorUnitario($key['Valor_Unitario']);
+                $a->setCantidad($key['Cantidad']);
+                array_push($lista,$a); 
+            }
+        } catch (PDOException $e) {
+            $e->getMessage().'error en listar de DaoAprendizImpl';
+        }
+
+        return $lista;
     }
+
 }//Llave Clase
 
 

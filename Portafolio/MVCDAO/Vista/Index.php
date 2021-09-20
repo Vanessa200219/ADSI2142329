@@ -10,7 +10,7 @@
 <body>
     <div class="f-div">
 
-        <a href="">PRODUCTOS</a>
+        <a href="InformacionProductos.php">PRODUCTOS</a>
 
                 <div class="mensaje">
                    <?php
