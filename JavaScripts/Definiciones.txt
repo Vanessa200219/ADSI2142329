@@ -1,0 +1,300 @@
+Variables Constantes y tipos de datos JS
+
+
+let foo = 42;    // foo ahora es un número
+foo     = 'bar'; // foo ahora es un string
+foo     = true;  // foo ahora es un booleano
+
+
+El último estándar ECMAScript define nueve tipos:
+Seis tipos de datos primitivos, controlados por el operador typeof
+Undefined: typeof instance === "undefined"
+Boolean: typeof instance === "boolean"
+Number: typeof instance === "number"
+String: typeof instance === "string"
+BigInt: typeof instance === "bigint"
+Symbol: typeof instance === "symbol"
+Null: typeof instance === "object". Tipo primitivo especial que tiene 
+un uso adicional para su valor: si el objeto no se hereda, se muestra 
+null;
+
+Object: typeof instance === "object". Tipo estructural especial que 
+no es de datos pero para cualquier instancia de objeto construido que 
+también se utiliza como estructuras de datos: new Object, new Array, 
+new Map, new Set, new WeakMap, new WeakSet, new Date y casi todo lo 
+hecho con la palabra clave new;
+
+Function: una estructura sin datos, aunque también responde al 
+operador
+typeof: typeof instance === "function". Esta simplemente es una 
+forma abreviada para funciones, aunque cada constructor de funciones 
+se deriva del constructor Object.
+
+Ten en cuenta que el único propósito valioso del uso del operador 
+typeof es verificar el tipo de dato. Si deseamos verificar cualquier 
+Tipo Estructural derivado de Object, no tiene sentido usar typeof 
+para eso, ya que siempre recibiremos "object". La forma correcta de 
+comprobar qué tipo de Objeto estamos usando es la palabra clave 
+instanceof. Pero incluso en ese caso, puede haber conceptos erróneos.
+
+
+
+
+Tipo Boolean
+Boolean representa una entidad lógica y puede tener dos valores: 
+true y false. Consulta Boolean y Boolean para obtener más detalles.
+
+Tipo Null
+El tipo Null tiene exactamente un valor: null. Consulta null y Null 
+para obtener más detalles.
+
+Tipo Undefined
+Una variable a la que no se le ha asignado un valor tiene el valor 
+undefined. Consulta undefined y Undefined para obtener más detalles.
+
+Tipo Number
+ECMAScript tiene dos tipos numéricos integrados: Number y BigInt 
+
+
+El tipo Number es un valor en formato binario de 64 bits de 
+doble precisión IEEE 754 (números entre -(253 - 1) y 253 - 1). 
+Además de representar números de punto flotante, el tipo Number 
+tiene tres valores simbólicos: +Infinity, -Infinity y NaN 
+("Not a Number" o No es un número).
+
+Para verificar el valor disponible más grande o el valor más pequeño 
+disponible dentro de ±Infinity, puedes usar las constantes 
+
+Number.MAX_VALUE o Number.MIN_VALUE.
+
+
+
+Tipo String
+El tipo String de JavaScript se utiliza para representar datos 
+textuales. Es un conjunto de "elementos" de valores enteros sin 
+signo de 16 bits. Cada elemento del String ocupa una posición en 
+la cadena. El primer elemento está en el índice 0, el siguiente en 
+el índice 1, y así sucesivamente. La longitud de una cadena es el 
+número de elementos que contiene.
+
+
+Tipo Symbol
+Un símbolo es un valor primitivo único e inmutable y se puede utilizar
+como clave de una propiedad de objeto (ve más abajo). En algunos 
+lenguajes de programación, los símbolos se denominan "átomos".
+
+Para obtener más detalles, consulta Symbol y el contenedor de objetos 
+Symbol en JavaScript.
+
+
+
+Objetos
+En ciencias de la computación, un objeto es un valor en la memoria al 
+que posiblemente hace referencia un identificador.
+
+
+
+Propiedades
+En JavaScript, los objetos se pueden ver como una colección de 
+propiedades. Con la sintaxis de objeto literal (en-US), se inicia un 
+conjunto limitado de propiedades; luego se pueden agregar y eliminar 
+propiedades. Los valores de propiedad pueden ser valores de cualquier 
+tipo, incluidos otros objetos, lo que permite construir estructuras 
+de datos complejas. Las propiedades se identifican mediante valores 
+clave. Un valor clave es un valor de cadena o un símbolo.
+
+
+
+Objetos y funciones "normales"
+Un objeto JavaScript es una asociación entre claves y valores. 
+Las claves son cadenas (o Symbols), y los valores pueden ser 
+cualquier cosa. Esto hace que los objetos se ajusten naturalmente 
+a hashmaps.
+
+Las funciones son objetos regulares con la capacidad adicional de ser 
+invocables.
+
+Fechas
+Al representar fechas, la mejor opción es utilizar la utilidad Date 
+incorporada en JavaScript.
+
+
+
+Colecciones indexadas: arreglos y arreglos tipados
+Los arreglos (en-US) son objetos regulares para los que 
+existe una relación particular entre las propiedades de 
+clave entera y la Propiedad length.
+
+Además, los arreglos heredan de Array.prototype, que les proporciona 
+un puñado de convenientes métodos para manipular arreglos. Por ejemplo,
+ indexOf (buscando un valor en el arreglo) o push 
+(agrega un elemento al arreglo), y así sucesivamente. 
+Esto hace que el Array sea un candidato perfecto para representar 
+listas o conjuntos.
+
+
+ESTRUCTURAS DE CONTROL
+
+4.4.1. Estructura while
+La estructura while permite crear bucles que se ejecutan ninguna 
+o más veces, dependiendo de la condición indicada. Su definición 
+formal es:
+
+while(condicion) { ...}
+El funcionamiento del bucle while se resume en: "mientras se 
+cumpla la condición indicada, repite indefinidamente las 
+instrucciones incluidas dentro del bucle".
+
+
+
+El siguiente ejemplo utiliza el bucle while para sumar todos 
+los números menores o iguales que otro número:
+
+var resultado = 0;var numero = 100;var i = 0; 
+while(i <= numero) { resultado += i; i++;} 
+alert(resultado);
+
+El programa debe sumar todos los números menores o igual que otro dado.
+Por ejemplo si el número es 5, se debe calcular: 
+1 + 2 + 3 + 4 + 5 = 15
+
+
+
+
+4.4.2. Estructura do...while
+El bucle de tipo do...while es muy similar al bucle while, salvo que 
+en este caso siempre se ejecutan las instrucciones del bucle al menos 
+la primera vez. Su definición formal es:
+
+do { ...} while(condicion);
+
+
+
+Utilizando este bucle se puede calcular fácilmente el factorial de un 
+número:
+
+var resultado = 1;var numero = 5; do { 
+resultado *= numero; // resultado = resultado * numero numero--;} 
+while(numero > 0); 
+alert(resultado);
+
+
+
+
+
+4.4.3. Estructura switch
+La estructura if...else se puede utilizar para realizar comprobaciones 
+múltiples y tomar decisiones complejas. Sin embargo, si todas las 
+condiciones dependen siempre de la misma variable, el código 
+JavaScript resultante es demasiado redundante:
+
+if(numero == 5) { ...}else if(numero == 8) { ...}else if(numero == 20) 
+{ ...}else { ...}
+
+En estos casos, la estructura switch es la más eficiente, ya que está 
+especialmente diseñada para manejar de forma sencilla múltiples 
+condiciones sobre la misma variable. Su definición formal puede 
+parecer compleja, aunque su uso es muy sencillo:
+
+switch(variable) { case valor_1: ... break; case valor_2: ... break; 
+... case valor_n: ... break; default: ... break;}
+
+
+
+if...else
+Resumen
+Ejecuta una sentencia si una condición específicada es evaluada como 
+verdadera. Si la condición es evaluada como falsa, otra sentencia 
+puede ser ejecutada.
+
+Sintaxis
+if (condición) sentencia1 [else sentencia2]
+
+condición
+Una expresión que puede ser evaluada como verdadera o falsa.
+
+sentencia1
+Sentencia que se ejecutará si condición es evaluada como verdadera. 
+Puede ser cualquier sentencia, incluyendo otras sentenccias if 
+anidadas. Para ejecutar múltiples sentencias, use una sentencia 
+block ({ ... }) para agruparlas.
+
+
+sentencia2
+Sentencia que se ejecutará si condición se evalúa como falsa, y 
+exista una cláusula else. Puede ser cualquier sentencia, incluyendo 
+sentencias block y otras sentencias if anidadas.
+
+
+if (condición1)
+   sentencia1
+else if (condición2)
+   sentencia2
+else if (condición3)
+   sentencia3
+...
+else
+   sentenciaN
+
+
+ejemplo 
+if (cipher_char == from_char) {
+   result = result + to_char;
+   x++;
+} else
+   result = result + clear_char;
+
+
+
+
+ARREGLOS
+
+El objeto Array de JavaScript es un objeto global que es usado en la 
+construcción de arrays, que son objetos tipo lista de alto nivel.
+
+Los arrays son objetos similares a una lista cuyo prototipo 
+proporciona métodos para efectuar operaciones de recorrido y de 
+mutación. Tanto la longitud como el tipo de los elementos de un 
+array son variables. Dado que la longitud de un array puede cambiar 
+en cualquier momento, y los datos se pueden almacenar en ubicaciones 
+no contiguas, no hay garantía de que los arrays de JavaScript sean 
+densos; esto depende de cómo el programador elija usarlos. 
+En general estas características son cómodas, pero si, en su caso 
+particular, no resultan deseables, puede considerar el uso de arrays 
+con tipo.
+
+Crear un Array
+let frutas = ["Manzana", "Banana"]
+
+console.log(frutas.length)
+
+
+Acceder a un elemento de Array mediante su índice
+let primero = frutas[0]
+// Manzana
+
+let ultimo = frutas[frutas.length - 1]
+// Banana
+
+
+Recorrer un Array
+
+frutas.forEach(function(elemento, indice, array) {
+    console.log(elemento, indice);
+})
+// Manzana 0
+// Banana 1
+
+
+Añadir un elemento al final de un Array
+
+let nuevaLongitud = frutas.push('Naranja') // Añade "Naranja" al final
+// ["Manzana", "Banana", "Naranja"]
+
+
+Eliminar el último elemento de un Array
+
+let ultimo = frutas.pop() // Elimina "Naranja" del final
+// ["Manzana", "Banana"]
+
+
