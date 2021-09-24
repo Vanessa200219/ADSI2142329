@@ -1,0 +1,110 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.dropdown{
+    background: rgb(51, 2, 92);
+    width: auto;
+    height: auto;
+}
+
+/*Menu*/
+
+
+.contenedor{
+    border: rgb(84, 15, 163) 2px solid;
+    height: 80px;
+    background: rgb(84, 15, 163);
+}
+
+#estructura {
+    transition: padding .5s ease-in-out;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    font-style: unset;
+    color: white;
+    font-weight: 600;
+}
+
+    
+.navegacion{
+    float: right;
+    background: rgb(78, 10, 155);
+    text-align: right;
+    width: 1000px;
+    height: 100px;
+    border-bottom-left-radius: 100%;
+
+}
+ 
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+    
+.menu > li > a{
+    display: block;
+    margin-right: 60px;
+    margin-left: 20px;
+    font-family: 'Open sans';
+    text-decoration: none;
+    padding: 4px 4px;
+}
+    
+.menu li a:hover{
+    transition: all .3s;
+    background-color: #2e025298;
+    border-radius: 10px;}
+
+
+/*FIN DE MENU*/
+
+.section{
+    width: auto;
+    height: 400px;
+    background: rgb(84, 15, 163);
+}
+
+
+/*TITULO*/
+
+.section2{
+    float: left;
+    background: rgba(98, 3, 206, 0.308);
+    width: 1363px;
+    height: 140px;
+    border-top-right-radius: 130%;
+}
+
+
+.text-first{
+    margin: auto;
+    background: rgb(84, 15, 163);
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    width: 675px;
+    text-align: center;
+    
+    border: rgb(84, 15, 163) 01px solid;
+}
+
+
+#p{
+    margin-top: 80px;
+}
+
+
+#text-second{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+/*FIN DE TITULO*/
+
+
+/*BIOGRAFIA*/
