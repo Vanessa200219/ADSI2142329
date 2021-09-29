@@ -1,0 +1,386 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.dropdown{
+    background: rgb(51, 2, 92);
+    width: auto;
+    height: auto;
+}
+
+/*Menu*/
+
+
+.contenedor{
+    border: rgb(84, 15, 163) 2px solid;
+    height: 80px;
+    background: rgb(84, 15, 163);
+}
+
+#estructura {
+    transition: padding .5s ease-in-out;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    font-style: unset;
+    color: white;
+    font-weight: 600;
+}
+
+    
+.navegacion{
+    float: right;
+    background: rgb(78, 10, 155);
+    text-align: right;
+    width: 1000px;
+    height: 100px;
+    border-bottom-left-radius: 100%;
+
+}
+ 
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+    
+.menu > li > a{
+    display: block;
+    margin-right: 60px;
+    margin-left: 20px;
+    font-family: 'Open sans';
+    text-decoration: none;
+    padding: 4px 4px;
+}
+    
+.menu li a:hover{
+    transition: all .3s;
+    background-color: #2e025298;
+    border-radius: 10px;}
+
+
+/*FIN DE MENU*/
+
+.section{
+    width: auto;
+    height: 400px;
+    background: rgb(84, 15, 163);
+}
+
+
+/*TITULO*/
+
+.section2{
+    float: left;
+    background: rgba(98, 3, 206, 0.308);
+    width: 1349px;
+    height: 140px;
+    border-top-right-radius: 130%;
+}
+
+
+.text-first{
+    margin: auto;
+    background: rgb(84, 15, 163);
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    width: 675px;
+    text-align: center;
+    
+    border: rgb(84, 15, 163) 01px solid;
+}
+
+
+#p{
+    margin-top: 80px;
+}
+
+
+#text-second{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+/*FIN DE TITULO*/
+
+
+/*BIOGRAFIA*/
+
+.Biografia{
+    width: auto;
+    height: 200px;
+    border-bottom: gray 1px solid;
+}
+
+.texto{
+    font-size: 20px;
+    float: right;
+    margin-right: 30px;
+    width: 600px;
+    text-align: center;
+}
+
+.p{
+    margin-right: 30px;
+    color: blueviolet;
+    text-align: right;
+    font-size: 30px;
+    margin-top: 90px;
+}
+
+.hojadevida{
+    float: left;
+    margin-left: 90px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.hojadevida:hover{
+    padding: 10px 10px 10px 10px;
+    transition: all .3s;
+    background-color: rgb(84, 15, 163);;
+    border-radius: 10px;
+    color: blanchedalmond;
+}
+
+
+/*PROYECTOS*/
+
+.proyectos{
+    width: auto;
+    height: 450px;
+    border-bottom: gray 1px solid;
+}
+
+
+.titulo{
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+}
+
+
+
+/*MCV*/
+.MCV{
+    float:left;
+    width: 399px; 
+    height: 70%;
+    margin-left: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.color{
+    margin: 0%;
+    padding: 20px;
+    width: auto;
+    height: 90px;
+    background: rgb(84, 15, 163);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+        border-right: 60px solid transparent;
+        border-left: 60px solid transparent;
+        border-top: 100px solid rgb(105, 11, 212);
+    margin-bottom: 30px;
+}
+
+.vinculo{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.vinculo:hover{
+    padding: 10px 10px 10px 10px;
+    transition: all .3s;
+    background-color: rgb(84, 15, 163);;
+    border-radius: 10px;
+    color: blanchedalmond;
+}
+
+
+/*CONTENEDOR*/
+.contenedores{
+    float:left;
+    width: 399px; 
+    height: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+   
+}
+
+.vinculo2{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.vinculo2:hover{
+    padding: 10px 10px 10px 10px;
+    transition: all .3s;
+    background-color: rgb(84, 15, 163);;
+    border-radius: 10px;
+    color: white;
+}
+
+.color2{
+    margin: 0%;
+    padding: 20px;
+    width: auto;
+    height: 90px;
+    background: rgb(212, 209, 209);
+    text-align: center;
+    font-size: 30px;
+    color: rgb(84, 15, 163);
+    border-right: 60px solid transparent;
+        border-left: 60px solid transparent;
+        border-top: 100px solid rgb(221, 219, 219);
+    margin-bottom: 30px;
+}
+
+
+/*JAVASCRIPT*/
+
+
+.javascript{
+    float:left;
+    width: 399px; 
+    height: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+
+
+}
+
+
+.color3{
+    margin: 0%;
+    padding: 20px;
+    width: auto;
+    height: 90px;
+    background: rgb(84, 15, 163);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+        border-right: 60px solid transparent;
+        border-left: 60px solid transparent;
+        border-top: 100px solid rgb(105, 11, 212);
+    margin-bottom: 30px;
+}
+
+/*MANUALES*/
+
+.manual{
+    width: auto;
+    height: 450px;
+}
+
+.one{
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.usuario{
+    margin-top: 80px;
+    float:left;
+    width: 399px; 
+    height: 70%;
+    margin-left: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+.software{
+    margin-top: 80px;
+    float:left;
+    width: 399px; 
+    height: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+   
+}
+
+/*FOOTER*/
+
+footer{
+    width: auto;
+    background: rgb(98, 3, 206);
+    height: 120px;
+}
+
+.año{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+}
+
+.bloque1{
+    float: left;
+}
+
+.num{
+    margin: 0%;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.conta1{
+    margin: 0%;
+    text-align: left;
+    margin-left: 30px;
+    border-top: blueviolet 2px solid;
+    width: 120px;
+}
+
+.conta{
+    margin: 0%;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+    width: 120px;
+}
+
+
+.bloque2{
+    float: right;
+}
+
+.email{
+    margin: 0%;
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    margin-right: 50px;
+}
+
+.conta2{
+    margin: 0%;
+    text-align: right;
+    margin-right: 40px;
+    border-top: blueviolet 2px solid;
+    width: 200px;
+}
+
+.corre{
+    margin: 0%;
+    font-size: 18px;
+    color: white;
+    text-align: right;
+    margin-right: 40px;
+    width: 120px;
+}
