@@ -18,68 +18,44 @@ console.log(vec);
 
 
 //SUMA
-console.log("SUMA");
-function suma1(num1, num2) {
-    num1 + num2;
-    
+function suma(vec) {
+    let sumar=0;
+    for (let i = 0; i < vec.length; i++) {       
+        sumar += vec[i];
+    }
+    return sumar;
 }
-console.log("La Suma es: " +vec.reduce(suma));
+
+console.log("La Suma es: " +suma(vec));
 
 
-//RESTA
-console.log("RESTA");
-function resta1(res) {
-   for(let i = 0; i <= vec.length; i++){
-    res -= vec[i];
-    } 
-    return res;
-    
+//PROMEDIO
+function promedio(vec) {
+    let suma=0;
+    for (let i = 0; i < vec.length; i++) {       
+        suma += vec[i];
+    }
+    return suma /x;
 }
-console.log(resta1());
+console.log('El Promedio del array es: '+promedio(vec)); 
 
-//DIVISION
-console.log("DIVICION");
-function division1(div) {
-   for(let i = 0; i <= vec.length; i++){
-    div /= vec[i];
-    } 
-    return div;
-    
+
+//MEDIANA
+function media(vec) {
+    let num1 = Math.floor((vec.length - 1) / 2);
+    let num2 = Math.ceil((vec.length - 1) / 2);
+    let mediana = (vec[num1] + vec[num2]) / 2;
+    return mediana;
 }
-console.log(division1());
+console.log('La Mediana es: '+media(vec)); 
+
 
 //MULTIPLICACION
-
-console.log("MULTIPLICACION");
-function multiolicacion1(multi) {
-   for(let i = 0; i <= vec.length; i++){
-    multi *= vec[i];
-    } 
-    return multi;
-    
+function multiplicacion(vec) {
+    let multi=0;
+    for (let i = 0; i < vec.length; i++) {       
+            multi += vec[i];
+    }
+    return multi *x;
 }
-console.log(multiolicacion1());
-
-//MEDIA
-
-console.log("MEDIA");
-function media1(medi) {
-   for(let i = 0; i <= vec.length; i++){
-    medi = vec[i];
-    } 
-    return medi;
-    
-}
-console.log(media1());
-
-//MODA
-
-console.log("MODA");
-function moda1(mod) {
-   for(let i = 0; i <= vec.length; i++){
-    mod = vec[i];
-    } 
-    return mod;
-    
-}
-console.log(moda1());
+console.log('La multiplicacion del array es: '+multiplicacion(vec)); 
