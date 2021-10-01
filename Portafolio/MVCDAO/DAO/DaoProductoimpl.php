@@ -30,7 +30,20 @@ class DaoProductoImpl extends Conexion implements daoProducto{
 
     public function Modificar(Producto $var)
     {
-        # code...
+        $CodigoProducto=$var->getCodigoProducto();
+        $CodigoCategoria=$var->getCodigoCategoria();
+        $NitProveedor=$var->getNitProveedor();
+        $NombreProducto=$var->getNombreProducto();
+        $ValorUnitario=$var->getValorUnitario();
+        $Cantidad=$var->getCantidad();
+        $stmt=$this->getCnx()->prepare("UPDATE productos " +
+        "SET Codigo_Categoria =$CodigoCategoria," +
+        "Nit_Proveedor =$NitProveedor," +
+       "Nombre_Producto = $NombreProducto" +
+       "Valor_Unitario = $ValorUnitario" +
+       "Cantidad = $Cantidad" +
+        "where Codigo_Producto =$CodigoProducto");
+        $stmt->execute();
     }
 
 
