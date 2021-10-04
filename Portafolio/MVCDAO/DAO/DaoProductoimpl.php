@@ -16,6 +16,13 @@ class DaoProductoImpl extends Conexion implements daoProducto{
                 $NombreProducto=$var->getNombreProducto();
                 $ValorUnitario=$var->getValorUnitario();
                 $Cantidad=$var->getCantidad();
+                if ($CodigoProducto<2) {
+                    echo 'el registro codigodeProducto ya Existe';
+                }else{
+                    if ($CodigoProducto>1) {
+                        echo 'Registro Insertado';
+                    }
+                }
                 $sql="INSERT INTO productos VALUES(?,?,?,?,?,?)";
                 $stmt=$this->getCnx()->prepare($sql);
                 $stmt->execute([$CodigoProducto,$CodigoCategoria,$NitProveedor,$NombreProducto,$ValorUnitario,$Cantidad]);

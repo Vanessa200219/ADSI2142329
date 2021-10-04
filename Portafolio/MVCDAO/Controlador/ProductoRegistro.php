@@ -12,10 +12,13 @@ if (isset($_GET['Enviar'])) {
     $ValorUnitario=$_GET['Valor'];
     $Cantidad=$_GET['Cantidad'];
 
+
     $var=new Producto($CodigoProducto,$CodigoCategoria,$NitProveedor,$NombreProducto,$ValorUnitario,$Cantidad);
     $dao->Registrar($var);
+
     
-    echo "REGISTRO INSERTADO CON EXITO";
+    
+    //echo "REGISTRO INSERTADO CON EXITO";
     
     
 }
