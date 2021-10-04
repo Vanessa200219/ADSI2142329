@@ -19,7 +19,7 @@ class DaoProductoImpl extends Conexion implements daoProducto{
                 if ($CodigoProducto<2) {
                     echo 'el registro codigodeProducto ya Existe';
                 }else{
-                    if ($CodigoProducto==1) {
+                    if ($CodigoProducto>1) {
                         echo 'Registro Insertado';
                     }
                 }
