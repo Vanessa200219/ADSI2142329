@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <title>PORTAFOLIO</title>
 </head>
 <body>
@@ -63,7 +63,7 @@
         </div>
 
         <div class="contenedores">
-            <section class="color2">CONTENEDORES</section>
+            <section class="color2">JAVASCRIPT HERENCIA</section>
             <a class="vinculo2" href="">Ver Sitio</a>
         </div>
         
@@ -81,7 +81,7 @@
 
         <div class="usuario">
             <section class="color">Manual de Usuarios</section>
-            <a class="vinculo" href="">Ver Sitio</a>
+            <a class="vinculo" href="Manual/manualdeusuarios.php">Ver Sitio</a>
         </div>
 
         <div class="software">
@@ -91,7 +91,7 @@
 
         <div class="software">
             <section class="color2">Manual de Software</section>
-            <a class="vinculo2" href="">Ver Sitio</a>
+            <a class="vinculo2" href="Manual/manualdesoftware.php">Ver Sitio</a>
         </div>
     </section>
 

@@ -16,21 +16,21 @@ class DaoProductoImpl extends Conexion implements daoProducto{
                 $NombreProducto=$var->getNombreProducto();
                 $ValorUnitario=$var->getValorUnitario();
                 $Cantidad=$var->getCantidad();
-                if ($CodigoProducto<2) {
-                    echo 'el registro codigodeProducto ya Existe';
-                }else{
-                    if ($CodigoProducto>1) {
-                        echo 'Registro Insertado';
-                    }
-                }
                 $sql="INSERT INTO productos VALUES(?,?,?,?,?,?)";
                 $stmt=$this->getCnx()->prepare($sql);
                 $stmt->execute([$CodigoProducto,$CodigoCategoria,$NitProveedor,$NombreProducto,$ValorUnitario,$Cantidad]);
+                if ($CodigoProducto>1) {
+                    echo 'PRODUCTO REGISTRADO';
+                }else {
+                    if ($CodigoProducto<=0) {
+                        echo 'Insercion no se pudo ejecutar, intente de nuevo';
+                    }
+                }
             }else {
                 echo $this->getCnx().' *NULO* <br>';
             }
         } catch (PDOException $p) {
-            echo $p->getMessage().'*********ERROR**************';
+            echo 'ERROR EN INGRESAR LOS DATOS';
         }
     }
 
@@ -79,7 +79,7 @@ class DaoProductoImpl extends Conexion implements daoProducto{
                 array_push($lista,$a); 
             }
         } catch (PDOException $e) {
-            $e->getMessage().'error en listar de DaoAprendizImpl';
+            $e->getMessage().'error en listar de Productoimpl';
         }
 
         return $lista;

@@ -74,7 +74,7 @@ body{
 .section2{
     float: left;
     background: rgba(98, 3, 206, 0.308);
-    width: 1349px;
+    width: 1300px;
     height: 140px;
     border-top-right-radius: 130%;
 }
@@ -170,9 +170,9 @@ body{
 /*MCV*/
 .MCV{
     float:left;
-    width: 399px; 
+    width: 320px; 
     height: 70%;
-    margin-left: 30px;
+    margin-left: 100px;
     margin-right: 20px;
     text-align: center;
 }
@@ -210,9 +210,9 @@ body{
 /*CONTENEDOR*/
 .contenedores{
     float:left;
-    width: 399px; 
+    width: 320px; 
     height: 70%;
-    margin-left: 20px;
+    margin-left: 60px;
     margin-right: 20px;
     text-align: center;
    
@@ -253,9 +253,9 @@ body{
 
 .javascript{
     float:left;
-    width: 399px; 
+    width: 320px; 
     height: 70%;
-    margin-left: 20px;
+    margin-left: 60px;
     margin-right: 20px;
     text-align: center;
 
@@ -287,15 +287,15 @@ body{
 
 .one{
     margin-top: 100px;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .usuario{
     margin-top: 80px;
     float:left;
-    width: 399px; 
+    width: 370; 
     height: 70%;
-    margin-left: 30px;
+    margin-left: 120px;
     margin-right: 20px;
     text-align: center;
 }
@@ -304,7 +304,7 @@ body{
 .software{
     margin-top: 80px;
     float:left;
-    width: 399px; 
+    width: 370; 
     height: 70%;
     margin-left: 20px;
     margin-right: 20px;
