@@ -15,8 +15,8 @@
             <nav class="navegacion">
                 <ul class="menu">
                     <li><a href="https://localhost/ADSI2142329/Portafolio/PORTAFOLIOWEB/JavaScript/java.php"><p id="estructura"><strong>INICIO</strong></p></a></li>
-                    <li><a href="https://localhost/ADSI2142329/Portafolio/PORTAFOLIOWEB/JavaScript/FuncionesFlecha.php/flecha.php"><p id="estructura"><strong>FUNCIONES FLECHAS</strong></p></a></li>
-                    <li><a href=""><p id="estructura"><strong>OPERACIONES</strong></p></a></li>
+                    <li><a href="../FuncionesFlecha/flecha.php"><p id="estructura"><strong>FUNCIONES FLECHAS</strong></p></a></li>
+                    <li><a href="../HerenciaProyecto/herencia.php"><p id="estructura"><strong>HERENCIA</strong></p></a></li>
                     <li><a href="fraccion.php"><p id="estructura"><strong>FRACCIONARIOS</strong></p></a></li>
                 </ul>
             </nav>
@@ -66,7 +66,7 @@
 
                     <tr align="center">
                         <td>
-                            <input class="resultado" value="Resultado" type="button" onclick="algoritmo();" />
+                            <input class="resultado" value="Resultado" type="button" onclick="suma();" />
                         </td>
                     </tr>
 

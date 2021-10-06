@@ -64,7 +64,7 @@
 
         <div class="contenedores">
             <section class="color2">JAVASCRIPT HERENCIA</section>
-            <a class="vinculo2" href="">Ver Sitio</a>
+            <a class="vinculo2" href="JavaScript/HerenciaProyecto/herencia.php">Ver Sitio</a>
         </div>
         
         <div class="javascript">
