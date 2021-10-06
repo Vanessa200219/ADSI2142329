@@ -69,7 +69,7 @@
         
         <div class="javascript">
             <section class="color3">JAVASCRIPT</section>
-            <a class="vinculo" href="">Ver Sitio</a>
+            <a class="vinculo" href="JavaScript/java.php">Ver Sitio</a>
         </div>
     </section>
 
