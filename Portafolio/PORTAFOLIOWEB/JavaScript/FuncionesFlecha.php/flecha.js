@@ -19,6 +19,7 @@ var suma = (num1, num2) => num1 + num2;
 console.log("La Suma es: " +vec.reduce(suma));
 
 
+
 //ARRAY MAYOR
 var mayor =vec=> Math.max(...vec);
 console.log('El mayor del Array es: '+ mayor(vec));
