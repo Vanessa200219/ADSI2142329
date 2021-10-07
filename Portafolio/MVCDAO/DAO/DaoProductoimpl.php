@@ -21,6 +21,7 @@ class DaoProductoImpl extends Conexion implements daoProducto{
                 $stmt->execute([$CodigoProducto,$CodigoCategoria,$NitProveedor,$NombreProducto,$ValorUnitario,$Cantidad]);
                 if ($CodigoProducto>1) {
                     echo 'PRODUCTO REGISTRADO';
+                    //'<script languaje="JavaScript"> alert(¡Guardado!);</script>
                 }else {
                     if ($CodigoProducto<=0) {
                         echo 'Insercion no se pudo ejecutar, intente de nuevo';
@@ -49,14 +50,25 @@ class DaoProductoImpl extends Conexion implements daoProducto{
        "Nombre_Producto = $NombreProducto" +
        "Valor_Unitario = $ValorUnitario" +
        "Cantidad = $Cantidad" +
-        "where Codigo_Producto =$CodigoProducto");
+        "WHERE Codigo_Producto=$CodigoProducto");
         $stmt->execute();
     }
 
 
     public function Eliminar(Producto $var)
     {
-        # code...
+        try {
+            if($this->getCnx()!=null) {
+                $CodigoProducto=$var->getCodigoProducto();
+                
+                $sql="DELETE FROM  productos WHERE CodigoProducto=$CodigoProducto";
+               
+            }else {
+                echo $this->getCnx().' *NULO* <br>';
+            }
+        } catch (PDOException $p) {
+            echo 'ERROR AL ELIMINAR';
+        }
     }
 
 

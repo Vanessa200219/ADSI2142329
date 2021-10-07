@@ -11,6 +11,7 @@
 
     <div class="div">
 
+
     <a href="Index.php">Registrar Producto</a>
 
         <table class="table">
@@ -37,7 +38,7 @@
                         echo "<td>".$key->getValorUnitario(). "</td>";
                         echo "<td>".$key->getCantidad(). "</td>";
                         echo "<td> <a href='indexEditarProducto.php?Codigo=".$key->getCodigoProducto()."'><button>Modificar</button></a> 
-                                    <a href=''><button>Eliminar</button></a> </td>";
+                                    <input type='submit' value='Eliminar' name='Eliminar'>";
                         echo "</tr>";
                     }
                  
