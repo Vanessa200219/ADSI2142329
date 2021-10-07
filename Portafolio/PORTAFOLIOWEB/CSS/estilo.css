@@ -8,6 +8,7 @@ body{
     background: rgb(51, 2, 92);
     width: auto;
     height: auto;
+    
 }
 
 /*Menu*/
@@ -17,6 +18,10 @@ body{
     border: rgb(84, 15, 163) 2px solid;
     height: 80px;
     background: rgb(84, 15, 163);
+    float: right;
+    position: fixed;
+    top: 0;
+    width:100%;
 }
 
 #estructura {
@@ -35,7 +40,7 @@ body{
     background: rgb(78, 10, 155);
     text-align: right;
     width: 1000px;
-    height: 100px;
+    height: 85px;
     border-bottom-left-radius: 100%;
 
 }
@@ -47,7 +52,7 @@ body{
     
 .menu > li > a{
     display: block;
-    margin-right: 60px;
+    margin-right: 30px;
     margin-left: 20px;
     font-family: 'Open sans';
     text-decoration: none;
@@ -64,7 +69,7 @@ body{
 
 .section{
     width: auto;
-    height: 400px;
+    height: 500px;
     background: rgb(84, 15, 163);
 }
 
@@ -75,7 +80,7 @@ body{
     float: left;
     background: rgba(98, 3, 206, 0.308);
     width: 1300px;
-    height: 140px;
+    height: 118px;
     border-top-right-radius: 130%;
 }
 
@@ -94,13 +99,14 @@ body{
 
 
 #p{
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 
 #text-second{
     font-size: 20px;
     font-weight: 100;
+    margin-bottom: 61px;
 }
 
 
@@ -113,6 +119,7 @@ body{
     width: auto;
     height: 200px;
     border-bottom: gray 1px solid;
+    text-decoration: none;
 }
 
 .texto{
@@ -121,9 +128,16 @@ body{
     margin-right: 30px;
     width: 600px;
     text-align: center;
+    text-decoration: none;
 }
 
+#Infor_Persol{
+    text-decoration: none;
+}
+
+
 .p{
+    text-decoration: none;
     margin-right: 30px;
     color: blueviolet;
     text-align: right;
@@ -152,7 +166,7 @@ body{
 
 .proyectos{
     width: auto;
-    height: 450px;
+    height: 400px;
     border-bottom: gray 1px solid;
 }
 
@@ -384,3 +398,4 @@ footer{
     margin-right: 40px;
     width: 120px;
 }
+
