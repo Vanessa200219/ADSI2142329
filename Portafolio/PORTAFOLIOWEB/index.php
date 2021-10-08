@@ -63,7 +63,7 @@
 
         <div class="MCV">
             <section class="color">MVC</section>
-            <a class="vinculo" href="https://localhost/ADSI2142329/Portafolio/MVCDAO/Vista/">Ver Sitio</a>
+            <a class="vinculo" href="../MVCDAO/Vista/">Ver Sitio</a>
         </div>
 
         <div class="contenedores">
