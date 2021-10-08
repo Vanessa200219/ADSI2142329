@@ -45,11 +45,12 @@
             en Programas.
         </p>
         
+        <!--Hipervinculos para dentro de la misma pagina-->
         <a class="hojadevida" href="hojadevida.php">HOJA DE VIDA</a>
 
 
         <a id="proyectos"></a>
-        
+
     </section>
 
         <section class="proyectos">

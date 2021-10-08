@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/manual.css">
+    <link rel="stylesheet" href="estilos/manuales.css">
     <title>MANUAL DE SOFTWARE</title>
 </head>
 <body>
@@ -35,16 +35,18 @@
         
         <section class="contenido1">
             <p class="titulo">CONTENIDO</p>
-            <li>Objetivo General y Específicos.</li>
-            <li>Contenido Tecnico.</li>
-            <li>Plataforma de Usuario.</li>
-            <li>Interfaz Grafica.</li>
+            <li><a href="#onetittle">Objetivo General y Específicos.</a></li>
+            <li><a href=""></a>Contenido Tecnico.</li>
+            <li><a href=""></a>Plataforma de Usuario.</li>
+            <li><a href=""></a>Interfaz Grafica.</li>
             <br><br><br>
         </section>
 
         <div class="model3">
-             <p class="firtsteam1">Objetivo General y Específicos.</p> 
+             <a id="onetittle" href=""></a><p class="firtsteam1">Objetivo General y Específicos.</p> 
             <br>
+            Se debe describir el objetivo general del sistema y los objetivos específicos
+            que se cumplieron con el desarrollo del sistema.
         </div>
 
         <div class="model2">

@@ -19,6 +19,7 @@ body{
     height: 80px;
     background: rgb(84, 15, 163);
     float: right;
+    /*Parte del Menu Despegable*/
     position: fixed;
     top: 0;
     width:100%;
