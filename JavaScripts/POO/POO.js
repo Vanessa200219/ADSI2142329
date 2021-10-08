@@ -1,34 +1,37 @@
 //4ta forma de crear objetos en JS
-class Estudiante{    
-    constructor(nombre,apellido){
-        this.nombre=nombre;
-        this.apellido=apellido;
-    }     
+// class Estudiante{    
+//     constructor(nombre,apellido){
+//         this.nombre=nombre;
+//         this.apellido=apellido;
+//     }     
 
-}
-var e1=new Estudiante('ana','angel');
-var e2=new Estudiante('jorge','Linero');
-console.log(typeof(e1));
-console.log(e1.nombre);
+// }
+// var e1=new Estudiante('ana','angel');
+// var e2=new Estudiante('jorge','Linero');
+// console.log(typeof(e1));
+// console.log(e1.nombre);
 
 //3ra forma de trabajar con objetos en JS
-function Aprendiz(nombre,apellido){
-   this.nombre=nombre;
-   this.apellido=apellido;
-   this.nombreCompleto=function(){
-       return this.nombre+' '+this.apellido;
-   }
-}
-var ob=new Aprendiz('Luis','Diaz');
-var ob2=new Aprendiz('Paola','Suarez');
-console.log(typeof(ob));
-console.log(ob.nombre);
-console.log(ob2.nombre);
-console.log(ob.nombreCompleto());
-console.log(ob2.nombreCompleto());
+// function Aprendiz(nombre,apellido){
+//    this.nombre=nombre;
+//    this.apellido=apellido;
+//    this.nombreCompleto=function(){
+//        return this.nombre+' '+this.apellido;
+//    }
+// }
+// var ob=new Aprendiz('Luis','Diaz');
+// var ob2=new Aprendiz('Paola','Suarez');
+// console.log(typeof(ob));
+// console.log(ob.nombre);
+// console.log(ob2.nombre);
+// console.log(ob.nombreCompleto());
+// console.log(ob2.nombreCompleto());
 
 //atributos=propiedades
 //this=esta clase, este objeto
+
+
+
 //2da forma de generar objetos en JS
 //JSON=Java Script Object Notation -clave:valor
 var alumno={
@@ -38,19 +41,22 @@ var alumno={
        return this.nombre+' '+this.apellido;
    }
 }
-console.log(typeof(alumno));
+//console.log(typeof(alumno));
 alumno.telefono='301222222';
+
+
+
 //recorrer claves de objeto con for in
-for(atributo in alumno){
-   console.log(atributo);
-}
+// for(atributo in alumno){
+//    console.log(atributo);
+// }
 
 //convertir valores de objeto a array
-var arreglo=Object.values(alumno);
-console.log(arreglo);
+// var arreglo=Object.values(alumno);
+// console.log(arreglo);
 
 console.log(alumno);
-delete alumno.apellido;
+//delete alumno.apellido;
 console.log(alumno);
 // var fraccionario={
 //     n1:1,

@@ -8,6 +8,7 @@ body{
     background: rgb(51, 2, 92);
     width: auto;
     height: auto;
+    
 }
 
 /*Menu*/
@@ -17,6 +18,11 @@ body{
     border: rgb(84, 15, 163) 2px solid;
     height: 80px;
     background: rgb(84, 15, 163);
+    float: right;
+    /*Parte del Menu Despegable*/
+    position: fixed;
+    top: 0;
+    width:100%;
 }
 
 #estructura {
@@ -35,7 +41,7 @@ body{
     background: rgb(78, 10, 155);
     text-align: right;
     width: 1000px;
-    height: 100px;
+    height: 85px;
     border-bottom-left-radius: 100%;
 
 }
@@ -47,7 +53,7 @@ body{
     
 .menu > li > a{
     display: block;
-    margin-right: 60px;
+    margin-right: 30px;
     margin-left: 20px;
     font-family: 'Open sans';
     text-decoration: none;
@@ -64,7 +70,7 @@ body{
 
 .section{
     width: auto;
-    height: 400px;
+    height: 500px;
     background: rgb(84, 15, 163);
 }
 
@@ -74,8 +80,8 @@ body{
 .section2{
     float: left;
     background: rgba(98, 3, 206, 0.308);
-    width: 1349px;
-    height: 140px;
+    width: 1300px;
+    height: 118px;
     border-top-right-radius: 130%;
 }
 
@@ -94,13 +100,14 @@ body{
 
 
 #p{
-    margin-top: 80px;
+    margin-top: 160px;
 }
 
 
 #text-second{
     font-size: 20px;
     font-weight: 100;
+    margin-bottom: 61px;
 }
 
 
@@ -113,6 +120,7 @@ body{
     width: auto;
     height: 200px;
     border-bottom: gray 1px solid;
+    text-decoration: none;
 }
 
 .texto{
@@ -121,9 +129,16 @@ body{
     margin-right: 30px;
     width: 600px;
     text-align: center;
+    text-decoration: none;
 }
 
+#Infor_Persol{
+    text-decoration: none;
+}
+
+
 .p{
+    text-decoration: none;
     margin-right: 30px;
     color: blueviolet;
     text-align: right;
@@ -152,7 +167,7 @@ body{
 
 .proyectos{
     width: auto;
-    height: 450px;
+    height: 400px;
     border-bottom: gray 1px solid;
 }
 
@@ -170,9 +185,9 @@ body{
 /*MCV*/
 .MCV{
     float:left;
-    width: 399px; 
+    width: 320px; 
     height: 70%;
-    margin-left: 30px;
+    margin-left: 100px;
     margin-right: 20px;
     text-align: center;
 }
@@ -210,9 +225,9 @@ body{
 /*CONTENEDOR*/
 .contenedores{
     float:left;
-    width: 399px; 
+    width: 320px; 
     height: 70%;
-    margin-left: 20px;
+    margin-left: 60px;
     margin-right: 20px;
     text-align: center;
    
@@ -253,9 +268,9 @@ body{
 
 .javascript{
     float:left;
-    width: 399px; 
+    width: 320px; 
     height: 70%;
-    margin-left: 20px;
+    margin-left: 60px;
     margin-right: 20px;
     text-align: center;
 
@@ -287,15 +302,15 @@ body{
 
 .one{
     margin-top: 100px;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .usuario{
     margin-top: 80px;
     float:left;
-    width: 399px; 
+    width: 370; 
     height: 70%;
-    margin-left: 30px;
+    margin-left: 120px;
     margin-right: 20px;
     text-align: center;
 }
@@ -304,7 +319,7 @@ body{
 .software{
     margin-top: 80px;
     float:left;
-    width: 399px; 
+    width: 370; 
     height: 70%;
     margin-left: 20px;
     margin-right: 20px;
@@ -384,3 +399,4 @@ footer{
     margin-right: 40px;
     width: 120px;
 }
+

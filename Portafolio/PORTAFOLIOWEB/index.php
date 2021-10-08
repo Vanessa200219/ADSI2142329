@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <script src="../estilo.js"></script>
     <title>PORTAFOLIO</title>
 </head>
 <body>
@@ -13,9 +14,9 @@
         <div class="contenedor">
 		    <nav class="navegacion">
 			    <ul class="menu">
-                    <li><a href=""><p id="estructura"><strong>Infomacion Personal</strong></p></a></li>
-				    <li><a href=""><p id="estructura"><strong>Proyectos</strong></p></a></li>
-				    <li><a href=""><p id="estructura"><strong>Manuales</strong></p></a></li>
+                    <li><a href="#Infor_Persol"><p id="estructura"><strong>Infomacion Personal</strong></p></a></li>
+				    <li><a href="#proyectos"><p id="estructura"><strong>Proyectos</strong></p></a></li>
+				    <li><a href="#manuales"><p id="estructura"><strong>Manuales</strong></p></a></li>
                 </ul>
 		    </nav>
 	    </div>
@@ -37,19 +38,22 @@
 
     </section>
 
-    <section class="Biografia">
+    <a id="Infor_Persol" href=""><section class="Biografia">
         <p class="p">TECNOLOGO EN SISTEMAS DE INFORMACION</p>
 
         <p class="texto">Analista de Sistema de Informacion, Programadora de Software y Mantenimiento
             en Programas.
         </p>
         
+        <!--Hipervinculos para dentro de la misma pagina-->
         <a class="hojadevida" href="hojadevida.php">HOJA DE VIDA</a>
-        
+
+
+        <a id="proyectos"></a>
+
     </section>
 
-    <br>
-    <section class="proyectos">
+        <section class="proyectos">
         <p class="titulo">PROYECTOS</p>
 
         <br>
@@ -63,25 +67,25 @@
         </div>
 
         <div class="contenedores">
-            <section class="color2">CONTENEDORES</section>
-            <a class="vinculo2" href="">Ver Sitio</a>
+            <section class="color2">JAVASCRIPT HERENCIA</section>
+            <a class="vinculo2" href="JavaScript/HerenciaProyecto/herencia.php">Ver Sitio</a>
         </div>
         
         <div class="javascript">
             <section class="color3">JAVASCRIPT</section>
-            <a class="vinculo" href="">Ver Sitio</a>
+            <a class="vinculo" href="JavaScript/java.php">Ver Sitio</a>
         </div>
     </section>
 
 
 
 
-    <section class="manual">
+    <a id="manuales" href=""><section class="manual">
 
 
         <div class="usuario">
             <section class="color">Manual de Usuarios</section>
-            <a class="vinculo" href="">Ver Sitio</a>
+            <a class="vinculo" href="Manual/manualdeusuarios.php">Ver Sitio</a>
         </div>
 
         <div class="software">
@@ -91,9 +95,9 @@
 
         <div class="software">
             <section class="color2">Manual de Software</section>
-            <a class="vinculo2" href="">Ver Sitio</a>
+            <a class="vinculo2" href="Manual/manualdesoftware.php">Ver Sitio</a>
         </div>
-    </section>
+    </section></a>
 
             
             
