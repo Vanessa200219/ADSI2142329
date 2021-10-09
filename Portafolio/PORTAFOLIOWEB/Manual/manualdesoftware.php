@@ -32,6 +32,7 @@
             análisis, el de diseño, entre otros.
             </p>
         </section>
+        <br><br><br><br><br><br>
         
         <section class="contenido1">
             <p class="titulo">CONTENIDO</p>
