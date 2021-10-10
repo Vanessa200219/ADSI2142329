@@ -4,28 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/inicio.css">
+    <link rel="stylesheet" href="../CSS/java.css">
     <script src="fraccion.js"></script>
     <title>Fraccionarios</title>
 </head>
 <body>
-    <div class="dropdown">
+    <!-- HEADER DE RUTAS Y DESCARGAS -->
+    <div id="header">
+            
+            <a class="return  header" href="../../../PORTAFOLIOWEB/">PORTAFOLIO</a>
+            <a class="products header" href="../java.php">JAVASCRIPT</a> 
+            <a class="products header" href="../FuncionesFlecha/flecha.php">FUNCIONES FLECHA</a>
 
-        <div class="contenedor">
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="https://localhost/ADSI2142329/Portafolio/PORTAFOLIOWEB/JavaScript/java.php"><p id="estructura"><strong>INICIO</strong></p></a></li>
-                    <li><a href="../FuncionesFlecha/flecha.php"><p id="estructura"><strong>FUNCIONES FLECHAS</strong></p></a></li>
-                    <li><a href="../HerenciaProyecto/herencia.php"><p id="estructura"><strong>HERENCIA</strong></p></a></li>
-                    <li><a href="fraccion.php"><p id="estructura"><strong>FRACCIONARIOS</strong></p></a></li>
-                </ul>
-            </nav>
         </div>
-    </div>
+
+    <!-- FIN DE HEADER RUTAS Y DESCARGAS -->
 
 
-    <div>
-        <form name="formulario1">
+    <div class="contenedor">
+        <form name="formulario1" class="formulario1">
             <table>
                 <tbody>
                     <tr>
@@ -95,6 +92,17 @@
         </form>
     </div>
 
-    
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>2021</h1>
+      </div>
+    </div>
+        
+      
+  </section>
+  <!-- End Footer -->
 </body>
 </html>

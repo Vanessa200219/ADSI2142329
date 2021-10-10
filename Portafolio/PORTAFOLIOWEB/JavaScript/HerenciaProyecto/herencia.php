@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/inicio.css">
+    <link rel="stylesheet" href="../CSS/java.css">
     <script src="Persona.js"></script>
     <title>HERENCIA JAVASCRIPT</title>
 </head>
 <body>
-    <div class="dropdown">
 
-        <div class="contenedor">
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="https://localhost/ADSI2142329/Portafolio/PORTAFOLIOWEB/JavaScript/java.php"><p id="estructura"><strong>INICIO</strong></p></a></li>
-                    <li><a href="..//FuncionesFlecha/flecha.php"><p id="estructura"><strong>FUNCIONES FLECHAS</strong></p></a></li>
-                    <li><a href="../HerenciaProyecto/herencia.php"><p id="estructura"><strong>HERENCIA</strong></p></a></li>
-                    <li><a href="../Fracciones/fraccion.php"><p id="estructura"><strong>FRACCIONARIOS</strong></p></a></li>
-                </ul>
-            </nav>
+
+    <!-- HEADER DE RUTAS Y DESCARGAS -->
+    <div id="header">
+            
+            <a class="return  header" href="../../../PORTAFOLIOWEB/">PORTAFOLIO</a>
+
         </div>
-    </div>
+
+    <!-- FIN DE HEADER RUTAS Y DESCARGAS -->
     
+
+
+
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>2021</h1>
+      </div>
+    </div>
+        
+      
+  </section>
+  <!-- End Footer -->
 </body>
 </html>
