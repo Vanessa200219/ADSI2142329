@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/manuales.css">
+    <link rel="stylesheet" href="estilos/manual.css">
     <title>MANUAL DE USUARIOS</title>
 </head>
 <body>
 
-    <div class="div1"><a class="volver" href="https://localhost/ADSI2142329/Portafolio/PORTAFOLIOWEB/">Volver</a></div>
+
+    <!-- HEADER DE RUTAS Y DESCARGAS -->
+    <div id="header">
+            
+        <a class="return  header" href="../../PORTAFOLIOWEB/">PORTAFOLIO</a>
+
+    </div>
+
+    <!-- FIN DE HEADER RUTAS Y DESCARGAS -->
+      
 
     <div class="contenedor">
 

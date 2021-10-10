@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/manuales.css">
+    <link rel="stylesheet" href="estilos/manual.css">
     <title>MANUAL DE SOFTWARE</title>
 </head>
 <body>
 
-    <div class="div1"><a class="volver" href="https://localhost/ADSI2142329/Portafolio/PORTAFOLIOWEB/">Volver</a></div>
 
+    <!-- HEADER DE RUTAS Y DESCARGAS -->
+    <div id="header">
+            
+        <a class="return  header" href="../../PORTAFOLIOWEB/">PORTAFOLIO</a>
+
+    </div>
+
+    <!-- FIN DE HEADER RUTAS Y DESCARGAS -->
+      
     <div class="contenedor">
 
         <img class="manual" src="img/imagen2.png" alt=""><br>
@@ -36,7 +44,7 @@
         
         <section class="contenido1">
             <p class="titulo">CONTENIDO</p>
-            <li><a href="#onetittle">Objetivo General y Específicos.</a></li>
+            <li>Objetivo General y Específicos.</a></li>
             <li><a href=""></a>Contenido Tecnico.</li>
             <li><a href=""></a>Plataforma de Usuario.</li>
             <li><a href=""></a>Interfaz Grafica.</li>
@@ -44,7 +52,7 @@
         </section>
 
         <div class="model3">
-             <a id="onetittle" href=""></a><p class="firtsteam1">Objetivo General y Específicos.</p> 
+            <p class="firtsteam1">Objetivo General y Específicos.</p> 
             <br>
             Se debe describir el objetivo general del sistema y los objetivos específicos
             que se cumplieron con el desarrollo del sistema.
@@ -138,5 +146,18 @@
 
     </div>
     
+
+    
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1>2021</h1>
+      </div>
+    </div>
+        
+      
+  </section>
+  <!-- End Footer -->
 </body>
 </html>
