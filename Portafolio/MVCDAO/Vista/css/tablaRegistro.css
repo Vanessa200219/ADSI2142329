@@ -1,0 +1,116 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+/* HEADER DE RUTAS */
+#header{
+    position: relative;
+    z-index: 1;
+    padding-top: 0;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: gray 1px solid;
+    background-color: rgb(71, 13, 138);
+}
+
+
+.return{
+    margin-left: 10px;
+    float: left;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+
+ .return:hover{
+    
+	color: rgb(196, 18, 18);
+}
+
+
+.products{
+    margin-right: 10px;
+    float: right;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+
+
+ .products:hover{
+     color: rgb(196, 18, 18);
+}
+
+/* fin header */
+
+
+
+
+body{
+    background: url("../img/Doc2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+div{
+    position: relative;
+    width: auto;
+    max-width: auto;
+    padding-top: 30px;
+}
+
+.table{
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    width: auto;
+    max-width: auto;
+    border: 1px solid #2a0466; 
+}
+
+
+.table th{
+    font-size: 18px;
+    padding:5px;
+    background: #4b039c54 ;
+}
+
+.table td{
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    padding:5px;
+}
+
+.tittle{
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(33, 0, 59, 0.164);
+}
+
+

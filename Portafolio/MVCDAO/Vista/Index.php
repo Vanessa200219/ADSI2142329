@@ -4,56 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <title>FORMULARIO PRODUCTOS</title>
 </head>
 <body>
     <div class="f-div">
 
-        <a href="InformacionProductos.php">PRODUCTOS</a>
-        <a class="volver" href="https://localhost/ADSI2142329/Portafolio/PORTAFOLIOWEB/">VOLVER</a>
-        <a class="descargar" href="Archivos/mvc.sql" download="basededatos.sql">DESCARGAR BASE DE DATOS</a>
+    <!-- HEADER DE RUTAS Y DESCARGAS -->
+        <div id="header">
+            
+            <a class="return  header" href="../../PORTAFOLIOWEB/">PORTAFOLIO</a>
+            <a class="download" href="Archivos/mvc.sql" download="basededatos.sql">DESCARGAR MYSQL</a> 
+            <a class="products header" href="InformacionProductos.php">PRODUCTOS</a>
+
+        </div>
+
+    <!-- FIN DE HEADER RUTAS Y DESCARGAS -->
+        
+
+    <!-- MENSAJE DE REGISTRO -->
+        <section class="message">
+            <div class="message__text">
+                <?php
+                    include("../Controlador/ProductoRegistro.php");
+                ?>
+            </div>
+        </section> 
+    <!-- FIN DE MENSAJE REGISTRO -->
 
 
-                <div class="mensaje">
-                   <?php
-                        include("../Controlador/ProductoRegistro.php");
-                    ?>
-                </div>
+    <!-- FORMULARIO -->
 
-    <form action="" method="GET">
+    <div class="div__form">
 
-        <h1><center>REGISTRO PRODUCTO</center></h1><br><br>
+        <form class="form__items" action="" method="GET">
 
-        <label>CODIGO DEL PRODUCTO</label><br>
-        <input type="number" name="Producto" placeholder="Ingrese Codigo Producto" required>
-        <br>
+            <h1 class="tittle">REGISTRO PRODUCTO</h1>
 
-        <label>CODIGO DE CATEGORIA</label><br>
-        <input type="number" name="Categoria" placeholder="Ingrese Codigo ategoria" required>
-        <br>
+            <label>CODIGO DEL PRODUCTO</label>
+            <input type="number" name="Producto" placeholder="Ingrese Codigo Producto" required><br><br>
 
-        <label>NIT PROVEEDOR</label><br>
-        <input type="text" name="Proveedor" placeholder="Ingrese Nit Proveedor" required>
-        <br>
 
-        <label>NOMBRE DEL PRODUCTO</label><br>
-        <input type="text" name="Nombre" placeholder="Ingrese Nombre del Producto" required>
-        <br>
+            <label>CODIGO DE CATEGORIA</label>
+            <input type="number" name="Categoria" placeholder="Ingrese Codigo ategoria" required><br><br>
+            
 
-        <label>VALOR UNITARIO</label><br>
-        <input type="text" name="Valor" placeholder="Ingrese Valor Unitario" required>
-        <br>
+            <label>NIT PROVEEDOR</label>
+            <input type="text" name="Proveedor" placeholder="Ingrese Nit Proveedor" required><br><br>
+        
 
-        <label>CANTIDAD</label><br>
-        <input type="number" name="Cantidad" placeholder="Ingrese la cantidad" required>
-        <br><br>
+            <label>NOMBRE DEL PRODUCTO</label>
+            <input type="text" name="Nombre" placeholder="Ingrese Nombre del Producto" required><br><br>
+            
 
-        <input type="submit" name="Enviar" value="Insertar Registro">
+            <label>VALOR UNITARIO</label>
+            <input type="text" name="Valor" placeholder="Ingrese Valor Unitario" required><br><br>
+            
 
-    </form>
-    <br>
-                
+            <label>CANTIDAD</label>
+            <input type="number" name="Cantidad" placeholder="Ingrese la cantidad" required>
+
+
+            <input type="submit" name="Enviar" value="Insertar Registro">
+
+        </form>
+    </div>      
+    
+
     </div>
 </body>
 </html>

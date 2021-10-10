@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estiloInformacionProductos.css">
+    <link rel="stylesheet" href="css/tablaRegistro.css">
     <title>INFORMACION PRODUCTOS</title>
 </head>
 <body>
 
-    <div class="div">
+    <!-- header -->
+        <div id="header">
+            
+            <a class="return  header" href="../../PORTAFOLIOWEB/">PORTAFOLIO</a>
+            <a class="products header" href="Index.php">REGISTRAR PRODUCTO</a>
+
+        </div>
+    <!-- fin header -->
 
 
-    <a href="Index.php">Registrar Producto</a>
-
+<div class="div">
         <table class="table">
             <caption class="tittle">LISTA DE PRODUCTOS</caption>
              <thead>
@@ -24,29 +30,36 @@
                      <th>Nombre Producto</th>
                      <th>Valor Unitario</th>
                      <th>Cantidad</th>
-                     <th>Accion</th>
+                     <th>Editar</th>
+                     <th>Eliminar</th>
                  </tr>
              </thead>
              <tbody>
                  <?php 
                  require('../Controlador/ProductoListar.php');  
                     foreach ($Productos as $key) {
-                        echo "<tr><td>".$key->getCodigoProducto(). "</td>";
-                        echo "<td>".$key->getCodigoCategoria(). "</td>";
-                        echo "<td>".$key->getNitProveedor(). "</td>";
-                        echo "<td>".$key->getNombreProducto(). "</td>";
-                        echo "<td>".$key->getValorUnitario(). "</td>";
-                        echo "<td>".$key->getCantidad(). "</td>";
-                        echo "<td> <a href='indexEditarProducto.php?Codigo=".$key->getCodigoProducto()."'><button>Modificar</button></a> 
-                                    <input type='submit' value='Eliminar' name='Eliminar'>";
-                        echo "</tr>";
+                        ?>
+                        <tr>
+                        <td><?php echo $key->getCodigoProducto(); ?></td>
+                        <td><?php echo $key->getCodigoCategoria(); ?></td>
+                        <td><?php echo $key->getNitProveedor(); ?></td>
+                        <td><?php echo $key->getNombreProducto(); ?></td>
+                        <td><?php echo $key->getValorUnitario(); ?></td>
+                        <td><?php echo $key->getCantidad(); ?></td>
+                        <td><a href="indexEditarProducto.php?id=<?php echo $key->getCodigoProducto(); ?>">Editar</a></td>
+                        <td><a href="indexEliminarProducto.php">Eliminar</a></td>
+
+                        </tr>
+                        <?php
                     }
+                        
                  
                  ?>
                         <!--<td>Editar/Eliminar</td>-->
                         
              </tbody>
         </table>
+
 
         
     </div>

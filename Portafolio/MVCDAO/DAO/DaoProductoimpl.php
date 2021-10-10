@@ -19,13 +19,11 @@ class DaoProductoImpl extends Conexion implements daoProducto{
                 $sql="INSERT INTO productos VALUES(?,?,?,?,?,?)";
                 $stmt=$this->getCnx()->prepare($sql);
                 $stmt->execute([$CodigoProducto,$CodigoCategoria,$NitProveedor,$NombreProducto,$ValorUnitario,$Cantidad]);
-                if ($CodigoProducto>1) {
+                if ($stmt==TRUE) {
                     echo 'PRODUCTO REGISTRADO';
                     //'<script languaje="JavaScript"> alert(¡Guardado!);</script>
                 }else {
-                    if ($CodigoProducto<=0) {
-                        echo 'Insercion no se pudo ejecutar, intente de nuevo';
-                    }
+                    echo 'Insercion no se pudo ejecutar, intente de nuevo';
                 }
             }else {
                 echo $this->getCnx().' *NULO* <br>';
