@@ -138,10 +138,10 @@
             <p class="secondteam">Descripción paso a paso</p>
             Describe paso a paso los procesos, así como pantallas, botones, cuadros de 
             texto, incluyendo también una muestra del código de cada rutina, pantalla, 
-            botón, etc. es decir,se muestra lo que hay detrás de la interfaz del usuario.
+            botón, etc. es decir, se muestra lo que hay detrás de la interfaz del usuario.
 
             </section>
-
+<br><br>
         </div>
 
     </div>
