@@ -27,7 +27,7 @@ body{
 
 /* HEADER DE RUTAS Y DESCARGAS */
 #header{
-    position: relative;
+    position: static;
     z-index: 1;
     padding-top: 0;
     max-width: 1500px;
@@ -70,9 +70,10 @@ body{
 
 
 .download{
-    margin-left: 10px;
+    padding-top: 3%;
+    margin-left: 20px;
     float: left;
-    color: white;
+    color: black;
     display: flex;
     justify-content: flex-end;
     font-size: 15px;

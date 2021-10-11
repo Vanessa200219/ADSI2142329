@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>FORMULARIO PRODUCTOS</title>
 </head>
 <body>
@@ -14,13 +14,14 @@
         <div id="header">
             
             <a class="return  header" href="../../PORTAFOLIOWEB/">PORTAFOLIO</a>
-            <a class="download" href="Archivos/mvc.sql" download="basededatos.sql">DESCARGAR MYSQL</a> 
             <a class="products header" href="InformacionProductos.php">PRODUCTOS</a>
+            <a class="products header" href="../../CRUD../index.php">CRUD COMPLETO</a>
 
         </div>
 
     <!-- FIN DE HEADER RUTAS Y DESCARGAS -->
         
+    
 
     <!-- MENSAJE DE REGISTRO -->
         <section class="message">
@@ -67,8 +68,13 @@
 
             <input type="submit" name="Enviar" value="Insertar Registro">
 
+            
+    <a class="download" href="Archivos/mvc.sql" download="basededatos.sql">DESCARGAR MYSQL</a> 
+
         </form>
+        
     </div>      
+    
     
 
     </div>
