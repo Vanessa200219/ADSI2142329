@@ -1,0 +1,20 @@
+.contenedor{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 370px;
+    background: rgb(72, 2, 153) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+#v-card-holder {
+    overflow: visible;
+    width: 100%;
+    height: auto;
+    margin-top: -194px;
+}
+
+
