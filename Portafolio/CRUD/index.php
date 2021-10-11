@@ -1,35 +1,103 @@
-<?php
-include 'model/conexion.php';
-$db=0;
-$sentencia = $request->query("SELECT * FROM productos;");
-$productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
-print_r($productos);
+<?php  
+
+		include 'model/conexion.php';
+		$sentencia = $bd->query("SELECT * FROM productos;");
+		$productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
+		//print_r($productos);
+	
+
+	
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>LISTA DE PRODUCTOS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="CSS/tabla.css">
 </head>
 <body>
-    <center>
-        <h3>Lista de Productos</h3>
-        <table>
-            <tr>
-                <td>Codigo Productos</td>
-                <td>Codigo Categoria</td>
-                <td>Nit Proveedor</td>
-                <td>Nombre Producto</td>
-                <td>Valor Unitario</td>
-                <td>Cantidad</td>
-                <td>Editar</td>
-                <td>Eliminar</td>
-            </tr>
-        </table>
-    </center>
+
+    <!-- HEADER DE RUTAS Y DESCARGAS -->
+    <div id="header">
+            
+        <a class="return  header" href="../PORTAFOLIOWEB/">PORTAFOLIO</a>
+
+    </div>
+   <!-- FIN DE HEADER RUTAS Y DESCARGAS -->
+
+	<center>
+		<div class="div__firmts">
+		<h3>LISTA DE PRODUCTOS</h3>
+		<table class="table__1">
+			<tbody>
+			<tr class="td__tittle">
+				<td>Codigo Producto</td>
+				<td>Codigo Categoria</td>
+				<td>Nit Proveedor</td>
+				<td>Nombre Producto</td>
+				<td>Valor Unitario</td>
+				<td>Cantidad</td>
+				<td>Editar</td>
+				<td>Eliminar</td>
+			</tr>
+			</tbody>
+			<?php 
+				foreach ($productos as $dato) {
+					?>
+					<tr class="content">
+						<td><?php echo $dato->Codigo_Producto; ?></td>
+						<td><?php echo $dato->Codigo_Categoria; ?></td>
+						<td><?php echo $dato->Nit_Proveedor; ?></td>
+						<td><?php echo $dato->Nombre_Producto; ?></td>
+						<td><?php echo $dato->Valor_Unitario; ?></td>
+						<td><?php echo $dato->Cantidad; ?></td>
+						<td><a class="editar" href="editar.php?id=<?php echo $dato->Codigo_Producto; ?>">Editar</a></td>
+						<td><a class="eliminar" href="eliminar.php?id=<?php echo $dato->Codigo_Producto; ?>">Eliminar</a></td>
+					</tr>
+					<?php
+				}
+			?>
+			
+		</table>
+		</div>
+		<!-- inicio insert -->
+		<hr>
+		<h3>Ingresar Porducto:</h3>
+		<form class="form" method="POST" action="insertar.php">
+			<table class="form__items">
+				<tr>
+					<td>Codigo Categoria: </td>
+					<td><input type="text" name="txtCategoria"></td>
+				</tr>
+				<tr>
+					<td>Nit Proveedor: </td>
+					<td><input type="text" name="txtProveedor"></td>
+				</tr>
+				<tr>
+					<td>Nombre Producto: </td>
+					<td><input type="text" name="txtProducto"></td>
+				</tr>
+				<tr>
+					<td>Valor Unitario: </td>
+					<td><input type="text" name="txtValor"></td>
+				</tr>
+				<tr>
+					<td>Cantidad: </td>
+					<td><input type="text" name="txtCantidad"></td>
+				</tr>
+				<input type="hidden" name="oculto" value="1">
+				<tr>
+					<td><input type="reset" name=""></td>
+					<td><input type="submit" value="Registrar"></td>
+				</tr>
+			</table>
+		</form>
+		<!-- fin insert-->
+
+
+		
+
+	</center>
 </body>
 </html>

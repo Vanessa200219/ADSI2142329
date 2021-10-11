@@ -100,3 +100,7 @@ class Cliente extends Persona {
 
 var ob1= new Cliente ('Marta','Garzon','1000002891','32456789','Marta@gmail.com',2,'Soacha','calle 30 sur n 23-32');
 console.log(ob1);
+
+
+
+
