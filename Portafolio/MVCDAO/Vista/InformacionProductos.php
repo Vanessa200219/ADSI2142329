@@ -13,11 +13,10 @@
         <div id="header">
             
             <a class="return  header" href="../../PORTAFOLIOWEB/">PORTAFOLIO</a>
-            <a class="products header" href="Index.php">REGISTRAR PRODUCTO</a>
+            <a class="products header" href="index.php">REGISTRAR PRODUCTO</a>
 
         </div>
     <!-- fin header -->
-
 
 <div class="div">
         <table class="table">

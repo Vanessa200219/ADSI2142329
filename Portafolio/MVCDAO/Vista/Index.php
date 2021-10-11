@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>FORMULARIO PRODUCTOS</title>
 </head>
 <body>
@@ -13,9 +13,9 @@
     <!-- HEADER DE RUTAS Y DESCARGAS -->
         <div id="header">
             
-            <a class="return  header" href="../../PORTAFOLIOWEB/">PORTAFOLIO</a>
-            <a class="products header" href="InformacionProductos.php">PRODUCTOS</a>
-            <a class="products header" href="../../CRUD../index.php">CRUD COMPLETO</a>
+            <a class="return " href="../../PORTAFOLIOWEB/">PORTAFOLIO</a>
+            <a class="products " href="InformacionProductos.php">PRODUCTOS</a>
+            <a class="products " href="../../CRUD../index.php">CRUD COMPLETO</a>
 
         </div>
 
@@ -35,7 +35,6 @@
 
 
     <!-- FORMULARIO -->
-
     <div class="div__form">
 
         <form class="form__items" action="" method="GET">
