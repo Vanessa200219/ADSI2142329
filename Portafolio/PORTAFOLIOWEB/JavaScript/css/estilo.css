@@ -107,8 +107,8 @@ img{
     bottom: 0;
     width: 100%;
     height: 40px;
-    color: white;;
-  background-color: rgb(71, 13, 138);
+    color: white;
+    background-color: rgb(71, 13, 138);
 }
 
 .brand{
@@ -140,6 +140,7 @@ img{
 
 
 .formulario1{
+    
     font-size: 20px;
     background-color: #fff;
     border-radius: 0 0 8px 8px;
@@ -149,6 +150,9 @@ img{
     margin: auto;
     width: 60%;
     padding: 5%;
+
+
+    
 }
 
 
@@ -179,7 +183,13 @@ table{
     color: white;
 }
 
+pre{
+    font-size: 15px;
+    position: relative;
+    height: auto;
+    margin-left: 20px;
 
+}
 
 /* flecha */
 
