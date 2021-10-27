@@ -51,11 +51,15 @@
 					<td>Cantidad: </td>
 					<td><input type="text" name="txt2Cantidad" value="<?php echo $productos1->Cantidad; ?>"></td>
 				</tr>
+
+
 				<tr>
 					<input type="hidden" name="oculto">
 					<input type="hidden" name="id2" value="<?php echo $productos1->Codigo_Producto; ?>">
 					<td colspan="2"><input type="submit" value="Aceptar"></td>
 				</tr>
+
+				
 			</table>
 		</form>
 	</center>
